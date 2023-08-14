@@ -8,15 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    var card: [Card] = cardData
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        TabView {
+            CardSection()
+                .tabItem({
+                    Image("home")
+                })
+            CookbookView()
+                .tabItem({
+                    Image("cookbook")
+                })
+            SettingsView()
+                .tabItem({
+                    Image("settings")
+                })
+            UserView()
+                .tabItem({
+                    Image("user")
+                })
+            }
+        .edgesIgnoringSafeArea(.top)
+        .background(Color.red)
+    
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
