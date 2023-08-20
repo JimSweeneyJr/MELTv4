@@ -49,6 +49,25 @@ struct SettingsView: View {
                         })
                         
                     }
+                    DisclosureGroup("Meat") {
+                        Toggle(isOn: .constant(true),
+                               label: {
+                            Text("Red Meat")
+                        })
+                        Toggle(isOn: .constant(true),
+                               label: {
+                            Text("Poultry")
+                        })
+                        Toggle(isOn: .constant(true),
+                               label: {
+                            Text("Seafood")
+                        })
+                        Toggle(isOn: .constant(true),
+                               label: {
+                            Text("Pork")
+                        })
+                        
+                    }
 
                     DisclosureGroup("Meal") {
                         Toggle(isOn: .constant(true),
@@ -73,21 +92,7 @@ struct SettingsView: View {
                         })
                         
                     }
-                    DisclosureGroup("Meat") {
-                        Toggle(isOn: .constant(true),
-                               label: {
-                            Text("Red Meat")
-                        })
-                        Toggle(isOn: .constant(true),
-                               label: {
-                            Text("Poultry")
-                        })
-                        Toggle(isOn: .constant(true),
-                               label: {
-                            Text("Seafood")
-                        })
-                        
-                    }
+                    
                 }
             }
             

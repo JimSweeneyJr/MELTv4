@@ -24,17 +24,20 @@ struct ContentView: View {
                 .tabItem({
                     Image("settings")
                 })
-            UserView()
+            ProfileView()
                 .tabItem({
                     Image("user")
                 })
             }
         .edgesIgnoringSafeArea(.top)
-        .background(Color.red)
+        
     
     }
+       
+        
         
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

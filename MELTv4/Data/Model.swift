@@ -24,4 +24,5 @@ struct Card: Identifiable {
     let cooking: Int
     let instructions: [String]
     let ingredients: [String]
+   
 }
