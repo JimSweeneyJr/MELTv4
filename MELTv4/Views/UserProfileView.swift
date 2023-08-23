@@ -59,6 +59,8 @@ struct ProfileView: View {
                         .padding(.bottom, 4)
                         .padding(.horizontal, 8)
                         .cornerRadius(30)
+                        .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
+                        .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
                 }
                 
                 VStack(alignment: .leading, spacing: 12) {
@@ -98,6 +100,8 @@ struct ProfileView: View {
                         .cornerRadius(10)
                 }
                 
+                Spacer(minLength: 0)
+                
                 Button(action: {
                     
                     self.index = 1
@@ -105,12 +109,14 @@ struct ProfileView: View {
                 }) {
                     
                     Text("Friends")
-                        .foregroundColor(self.index == 0 ? Color.white : .gray)
+                        .foregroundColor(self.index == 1 ? Color.white : .gray)
                         .padding(.vertical, 10)
                         .padding(.horizontal)
-                        .background(self.index == 0 ? Color.blue : Color.clear)
+                        .background(self.index == 1 ? Color.blue : Color.clear)
                         .cornerRadius(10)
                 }
+                
+                Spacer(minLength: 0)
                 
                 Button(action: {
                     
@@ -119,19 +125,121 @@ struct ProfileView: View {
                 }) {
                     
                     Text("Settings")
-                        .foregroundColor(self.index == 0 ? Color.white : .gray)
+                        .foregroundColor(self.index == 2 ? Color.white : .gray)
                         .padding(.vertical, 10)
                         .padding(.horizontal)
-                        .background(self.index == 0 ? Color.blue : Color.clear)
+                        .background(self.index == 2 ? Color.blue : Color.clear)
                         .cornerRadius(10)
                 }
                 
             }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(Color.yellow)
+            .cornerRadius(8)
+            .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
+            .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
+            .padding(.horizontal)
+            .padding(.top, 25)
             
-            Spacer(minLength: 0)
-                
+            
+            //MARK: Cards
+            ScrollView {
+                HStack(spacing: 20) {
+                    
+                    VStack(spacing: 12) {
+                        
+                        Image("Tacos")
+                            .resizable()
+                            .frame(width: 120, height: 120)
+                            .cornerRadius(8)
+                        Text("Tacos")
+                            .font(.title)
+                            .padding(.top, 10)
+                        Text("StreetFood Fire")
+                        Text("Serves 4")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                    }
+                    .padding(.vertical)
+                    .frame(width: (UIScreen.main.bounds.width - 60) / 2)
+                    .background(Color.yellow)
+                    .cornerRadius(15)
+                    .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
+                    .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
+                    
+                    VStack(spacing: 12) {
+                        
+                        Image("FrenchToast")
+                            .resizable()
+                            .frame(width: 120, height: 120)
+                            .cornerRadius(8)
+                        Text("French Toast")
+                            .font(.title)
+                            .padding(.top, 10)
+                        Text("Breakfast Lyfe")
+                        Text("Serves 4")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                    }
+                    .padding(.vertical)
+                    .frame(width: (UIScreen.main.bounds.width - 60) / 2)
+                    .background(Color.yellow)
+                    .cornerRadius(15)
+                    .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
+                    .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
+                    
+                }
+                .padding(.bottom)
+                Spacer(minLength: 0)
+                HStack(spacing: 20) {
+                    
+                    VStack(spacing: 12) {
+                        
+                        Image("PotStickers")
+                            .resizable()
+                            .frame(width: 120, height: 120)
+                            .cornerRadius(8)
+                        Text("Pot Stickers")
+                            .font(.title)
+                            .padding(.top, 10)
+                        Text("PotHead Stickers")
+                        Text("Serves 4")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                    }
+                    .padding(.vertical)
+                    .frame(width: (UIScreen.main.bounds.width - 60) / 2)
+                    .background(Color.yellow)
+                    .cornerRadius(15)
+                    .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
+                    .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
+                    
+                    VStack(spacing: 12) {
+                        
+                        Image("Steak")
+                            .resizable()
+                            .frame(width: 120, height: 120)
+                            .cornerRadius(8)
+                        Text("Ribeye Steak")
+                            .font(.title)
+                            .padding(.top, 10)
+                        Text("Steak 4 the Win")
+                        Text("Serves 4")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                    }
+                    .padding(.vertical)
+                    .frame(width: (UIScreen.main.bounds.width - 60) / 2)
+                    .background(Color.yellow)
+                    .cornerRadius(15)
+                    .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
+                    .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
+                    
+                }
+            }
         }
-        .background(Color.white).edgesIgnoringSafeArea(.all)
+        .background(Color.white)
     }
 }
 struct UserView_Previews: PreviewProvider {

@@ -24,6 +24,7 @@
 		22793F8F2A89B7B300E6492A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22793F8E2A89B7B300E6492A /* CardView.swift */; };
 		22793FD22A916FBF00E6492A /* CookbookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22793FD12A916FBF00E6492A /* CookbookCardView.swift */; };
 		22793FD42A918DFD00E6492A /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22793FD32A918DFD00E6492A /* ProfileHeaderView.swift */; };
+		22A02B2B2A958C8A001573E1 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A02B2A2A958C8A001573E1 /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		22793F8E2A89B7B300E6492A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		22793FD12A916FBF00E6492A /* CookbookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookCardView.swift; sourceTree = "<group>"; };
 		22793FD32A918DFD00E6492A /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		22A02B2A2A958C8A001573E1 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				22793FD32A918DFD00E6492A /* ProfileHeaderView.swift */,
 				22793F8E2A89B7B300E6492A /* CardView.swift */,
 				22793FD12A916FBF00E6492A /* CookbookCardView.swift */,
+				22A02B2A2A958C8A001573E1 /* FavoritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				22793F892A89B71700E6492A /* SettingsView.swift in Sources */,
 				22793F852A89B66100E6492A /* Model.swift in Sources */,
+				22A02B2B2A958C8A001573E1 /* FavoritesView.swift in Sources */,
 				22793F872A89B70800E6492A /* UserProfileView.swift in Sources */,
 				226D53AE2A89AC1A00AAB8C1 /* ContentView.swift in Sources */,
 				22793FD22A916FBF00E6492A /* CookbookCardView.swift in Sources */,
