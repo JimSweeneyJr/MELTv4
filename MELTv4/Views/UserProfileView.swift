@@ -84,63 +84,63 @@ struct ProfileView: View {
             
             //MARK: Tab Items
             
-            HStack {
-                
-                Button(action: {
-                    
-                    self.index = 0
+                HStack {
+                    Button(action: {
+                        
+                        self.index = 0
 
-                }) {
+                    }) {
+                        
+                        Text("Favorites")
+                            .foregroundColor(self.index == 0 ? Color.white : .gray)
+                            .padding(.vertical, 10)
+                            .padding(.horizontal)
+                            .background(self.index == 0 ? Color.blue : Color.clear)
+                            .cornerRadius(10)
+                    }
                     
-                    Text("Favorites")
-                        .foregroundColor(self.index == 0 ? Color.white : .gray)
-                        .padding(.vertical, 10)
-                        .padding(.horizontal)
-                        .background(self.index == 0 ? Color.blue : Color.clear)
-                        .cornerRadius(10)
-                }
-                
-                Spacer(minLength: 0)
-                
-                Button(action: {
+                    Spacer(minLength: 0)
                     
-                    self.index = 1
+                    Button(action: {
+                        
+                        self.index = 1
 
-                }) {
+                    }) {
+                        
+                        Text("Friends")
+                            .foregroundColor(self.index == 1 ? Color.white : .gray)
+                            .padding(.vertical, 10)
+                            .padding(.horizontal)
+                            .background(self.index == 1 ? Color.blue : Color.clear)
+                            .cornerRadius(10)
+                    }
                     
-                    Text("Friends")
-                        .foregroundColor(self.index == 1 ? Color.white : .gray)
-                        .padding(.vertical, 10)
-                        .padding(.horizontal)
-                        .background(self.index == 1 ? Color.blue : Color.clear)
-                        .cornerRadius(10)
-                }
-                
-                Spacer(minLength: 0)
-                
-                Button(action: {
+                    Spacer(minLength: 0)
                     
-                    self.index = 2
+                    Button(action: {
+                        
+                        self.index = 2
 
-                }) {
+                    }) {
+                        
+                        Text("Settings")
+                            .foregroundColor(self.index == 2 ? Color.white : .gray)
+                            .padding(.vertical, 10)
+                            .padding(.horizontal)
+                            .background(self.index == 2 ? Color.blue : Color.clear)
+                            .cornerRadius(10)
+                    }
                     
-                    Text("Settings")
-                        .foregroundColor(self.index == 2 ? Color.white : .gray)
-                        .padding(.vertical, 10)
-                        .padding(.horizontal)
-                        .background(self.index == 2 ? Color.blue : Color.clear)
-                        .cornerRadius(10)
                 }
-                
-            }
-            .padding(.horizontal, 10)
-            .padding(.vertical, 5)
-            .background(Color.yellow)
-            .cornerRadius(8)
-            .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
-            .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
-            .padding(.horizontal)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+//                .background(Color.)
+                .cornerRadius(8)
+                .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
+                .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
+                .padding(.horizontal)
             .padding(.top, 25)
+            
             
             
             //MARK: Cards
@@ -163,7 +163,7 @@ struct ProfileView: View {
                     }
                     .padding(.vertical)
                     .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                    .background(Color.yellow)
+                    
                     .cornerRadius(15)
                     .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
                     .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
@@ -184,7 +184,7 @@ struct ProfileView: View {
                     }
                     .padding(.vertical)
                     .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                    .background(Color.yellow)
+                    
                     .cornerRadius(15)
                     .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
                     .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
@@ -210,7 +210,7 @@ struct ProfileView: View {
                     }
                     .padding(.vertical)
                     .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                    .background(Color.yellow)
+                    
                     .cornerRadius(15)
                     .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
                     .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
@@ -231,7 +231,7 @@ struct ProfileView: View {
                     }
                     .padding(.vertical)
                     .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                    .background(Color.yellow)
+//                    .background(Color.)
                     .cornerRadius(15)
                     .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
                     .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
