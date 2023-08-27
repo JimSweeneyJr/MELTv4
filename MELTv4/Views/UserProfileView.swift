@@ -241,6 +241,7 @@ struct ProfileView: View {
         }
         .background(Color.white)
     }
+    
 }
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
