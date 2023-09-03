@@ -10,10 +10,11 @@ import SwiftUI
 struct CookbookCardView: View {
     
     var card: Card
+    @State private var isShowingSettings: Bool = false
     
     var body: some View {
         HStack {
-            
+        
             VStack(alignment: .leading, spacing: 10, content: {
                 Text(card.name)
                     .font(.title2)
@@ -22,23 +23,25 @@ struct CookbookCardView: View {
                     .font(.caption)
                     .lineLimit(3)
                 Text("Serves: \(card.serves), Cook Time: \(card.cooking)")
-                
-               
-                
+        
+        
+        
             })
-            
+        
             Spacer(minLength: 10)
-            
+        
             Image(card.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 90, height: 90)
                 .cornerRadius(10)
-            
+        
         }
         .padding(.horizontal)
         Divider()
-    }
+        
+        }
+        
 }
 
 struct CookbookCardView_Previews: PreviewProvider {
@@ -46,3 +49,6 @@ struct CookbookCardView_Previews: PreviewProvider {
         CookbookView()
     }
 }
+
+
+
