@@ -22,7 +22,7 @@ struct Card: Identifiable {
     let serves: Int
     let preparation: Int
     let cooking: Int
-    let instructions: [String]
+    let instructions: String
     let ingredients: [String]
    
 }

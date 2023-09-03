@@ -16,14 +16,14 @@ struct CardDetailHeaderView: View {
     
     var body: some View {
         ZStack {
-            
-            
             Image(card.imageName)
                 .resizable()
                 .scaledToFit()
                 .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
                 .padding(.vertical, 20)
                 .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
+                .cornerRadius(8)
+                
             }//: ZSTACK
         .frame(width: 600, height: 600, alignment: .center)
         .scaledToFit()
@@ -31,6 +31,7 @@ struct CardDetailHeaderView: View {
             withAnimation(.easeOut(duration: 0.5)) {
                 isAnimatingImage = true
             }
+            
         }
     }
 }

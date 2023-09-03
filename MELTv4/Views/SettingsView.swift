@@ -32,8 +32,11 @@ struct SettingsView: View {
                     DisclosureGroup("Allergies") {
                         Toggle(isOn: .constant(true),
                                label: {
+                            Text("Gluten")
+                        })
+                        Toggle(isOn: .constant(true),
+                               label: {
                             Text("Nuts")
-                            
                         })
                         Toggle(isOn: .constant(true),
                                label: {

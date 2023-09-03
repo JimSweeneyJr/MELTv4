@@ -17,6 +17,7 @@ struct CardDetailView: View {
                 VStack(alignment: .center, spacing: 20) {
                     // HEADER
                     CardDetailHeaderView(card: card)
+                    
                     VStack(alignment: .leading, spacing: 20) {
                         // TITLE
                         Text(card.name)
@@ -35,15 +36,18 @@ struct CardDetailView: View {
                             .fontWeight(.bold)
                             
                         //DESCRIPTION
-//                        Text(card.instructions)
-//                            .multilineTextAlignment(.leading)
+                        Text(card.instructions)
+                            .multilineTextAlignment(.leading)
+                            
+                            
                        
                     }//:VSTACK
                     .padding(.horizontal, 20)
-                    .frame(maxWidth: 640, alignment: .center)
+                    .frame(maxWidth: 440, alignment: .center)
                 }//: VSTACK
                 .navigationBarTitle(card.name, displayMode: .inline)
                 .navigationBarHidden(true)
+                .padding(.top, 100)
             }//: SCROLL
             .edgesIgnoringSafeArea(.top)
         }//: NAVIGATION

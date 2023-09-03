@@ -16,13 +16,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "In a small jar, add the olive oil, lemon juice, salt, pepper and the stalks of the parsely. Closed the lid and shake until combined into an almost creamy texture.",
-          "Toast the bread slices on a griddle or in the toaster, allow to cool slightly",
-          "In a large bowl combine the rest of your ingredients",
-          "Pour the parsley dressing over and toss until the avocado and eggs creams the salad together",
-          "Place a generous spoonful of the salad onto each slice of toast and serve"
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "1 punnet cherry Tomatoes, halved",
           "4 hard boiled eggs, halved and sliced",
@@ -44,11 +48,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "Heat a non-stick frying pan over high heat. Cook bacon for 1-2 minutes each side or until crisp. Transfer to a plate lined with paper towel.",
-          "Top 2 slices of sourdough with bacon, brie and avocado. Season with salt and pepper. Top with remaining bread and spread both sides with butter. Preheat a sandwich grill. Grill toasties until golden.",
-          "If you don’t have a sandwich press you can preheat your oven to 190°C or 170°C fan-forced and bake the toasties for 5-8 minutes or until cooked."
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "4 rashers streaky bacon",
           "4 slices sourdough bread",
@@ -65,11 +75,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "Heat a non-stick frying pan over high heat. Cook bacon for 1-2 minutes each side or until crisp. Transfer to a plate lined with paper towel.",
-          "Top 2 slices of sourdough with bacon, brie and avocado. Season with salt and pepper. Top with remaining bread and spread both sides with butter. Preheat a sandwich grill. Grill toasties until golden.",
-          "If you don’t have a sandwich press you can preheat your oven to 190°C or 170°C fan-forced and bake the toasties for 5-8 minutes or until cooked."
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "4 rashers streaky bacon",
           "4 slices sourdough bread",
@@ -86,11 +102,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "Heat a non-stick frying pan over high heat. Cook bacon for 1-2 minutes each side or until crisp. Transfer to a plate lined with paper towel.",
-          "Top 2 slices of sourdough with bacon, brie and avocado. Season with salt and pepper. Top with remaining bread and spread both sides with butter. Preheat a sandwich grill. Grill toasties until golden.",
-          "If you don’t have a sandwich press you can preheat your oven to 190°C or 170°C fan-forced and bake the toasties for 5-8 minutes or until cooked."
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "4 rashers streaky bacon",
           "4 slices sourdough bread",
@@ -107,11 +129,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "Heat a non-stick frying pan over high heat. Cook bacon for 1-2 minutes each side or until crisp. Transfer to a plate lined with paper towel.",
-          "Top 2 slices of sourdough with bacon, brie and avocado. Season with salt and pepper. Top with remaining bread and spread both sides with butter. Preheat a sandwich grill. Grill toasties until golden.",
-          "If you don’t have a sandwich press you can preheat your oven to 190°C or 170°C fan-forced and bake the toasties for 5-8 minutes or until cooked."
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "4 rashers streaky bacon",
           "4 slices sourdough bread",
@@ -128,11 +156,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "Heat a non-stick frying pan over high heat. Cook bacon for 1-2 minutes each side or until crisp. Transfer to a plate lined with paper towel.",
-          "Top 2 slices of sourdough with bacon, brie and avocado. Season with salt and pepper. Top with remaining bread and spread both sides with butter. Preheat a sandwich grill. Grill toasties until golden.",
-          "If you don’t have a sandwich press you can preheat your oven to 190°C or 170°C fan-forced and bake the toasties for 5-8 minutes or until cooked."
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "4 rashers streaky bacon",
           "4 slices sourdough bread",
@@ -149,11 +183,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "Heat a non-stick frying pan over high heat. Cook bacon for 1-2 minutes each side or until crisp. Transfer to a plate lined with paper towel.",
-          "Top 2 slices of sourdough with bacon, brie and avocado. Season with salt and pepper. Top with remaining bread and spread both sides with butter. Preheat a sandwich grill. Grill toasties until golden.",
-          "If you don’t have a sandwich press you can preheat your oven to 190°C or 170°C fan-forced and bake the toasties for 5-8 minutes or until cooked."
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "4 rashers streaky bacon",
           "4 slices sourdough bread",
@@ -170,11 +210,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "Heat a non-stick frying pan over high heat. Cook bacon for 1-2 minutes each side or until crisp. Transfer to a plate lined with paper towel.",
-          "Top 2 slices of sourdough with bacon, brie and avocado. Season with salt and pepper. Top with remaining bread and spread both sides with butter. Preheat a sandwich grill. Grill toasties until golden.",
-          "If you don’t have a sandwich press you can preheat your oven to 190°C or 170°C fan-forced and bake the toasties for 5-8 minutes or until cooked."
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "4 rashers streaky bacon",
           "4 slices sourdough bread",
@@ -191,11 +237,17 @@ let cardData: [Card] = [
         serves: 4,
         preparation: 10,
         cooking: 10,
-        instructions: [
-          "Heat a non-stick frying pan over high heat. Cook bacon for 1-2 minutes each side or until crisp. Transfer to a plate lined with paper towel.",
-          "Top 2 slices of sourdough with bacon, brie and avocado. Season with salt and pepper. Top with remaining bread and spread both sides with butter. Preheat a sandwich grill. Grill toasties until golden.",
-          "If you don’t have a sandwich press you can preheat your oven to 190°C or 170°C fan-forced and bake the toasties for 5-8 minutes or until cooked."
-        ],
+        instructions:
+          """
+          Do not burn the shit out of your meal. Cook it like a normal human being. And literally, just dont do that.
+          Do you understand the wooooords that are coming out of my mouth?
+          
+          Capeesh?
+          
+          No go Cook this damn meal.
+          
+          """
+        ,
         ingredients: [
           "4 rashers streaky bacon",
           "4 slices sourdough bread",
