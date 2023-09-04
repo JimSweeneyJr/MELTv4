@@ -83,12 +83,12 @@ struct ProfileView: View {
             .padding(.top, 10)
             
             //MARK: Tab Items
-            
+            NavigationView {
                 HStack {
                     Button(action: {
                         
                         self.index = 0
-
+                        
                     }) {
                         
                         Text("Favorites")
@@ -104,7 +104,7 @@ struct ProfileView: View {
                     Button(action: {
                         
                         self.index = 1
-
+                        
                     }) {
                         
                         Text("Friends")
@@ -120,7 +120,7 @@ struct ProfileView: View {
                     Button(action: {
                         
                         self.index = 2
-
+                        
                     }) {
                         
                         Text("Settings")
@@ -132,6 +132,7 @@ struct ProfileView: View {
                     }
                     
                 }
+            }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
 //                .background(Color.)
