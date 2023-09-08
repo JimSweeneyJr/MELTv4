@@ -10,6 +10,9 @@ import SwiftUI
 struct ProfileView: View {
     
     @State var index = 0
+    var card: [Card] = cardData
+    
+    @State private var isShowingSettings: Bool = false
     
     var body: some View {
         VStack {
@@ -29,19 +32,9 @@ struct ProfileView: View {
                 
                 Spacer(minLength: 0)
                 
-                Button(action: {
-                    
-                }) {
-                    Text("Add")
-                        .foregroundColor(.white)
-                        .padding(.vertical, 10)
-                        .padding(.horizontal, 25)
-                        .background(.blue)
-                        .cornerRadius(10)
-                    
-                }
                 
             }
+            
             .padding()
             
             HStack {
@@ -83,167 +76,88 @@ struct ProfileView: View {
             .padding(.top, 10)
             
             //MARK: Tab Items
-            NavigationView {
-                HStack {
-                    Button(action: {
-                        
-                        self.index = 0
-                        
-                    }) {
-                        
-                        Text("Favorites")
-                            .foregroundColor(self.index == 0 ? Color.white : .gray)
-                            .padding(.vertical, 10)
-                            .padding(.horizontal)
-                            .background(self.index == 0 ? Color.blue : Color.clear)
-                            .cornerRadius(10)
-                    }
+            
+            HStack {
+                Button(action: {
                     
-                    Spacer(minLength: 0)
+                    self.index = 0
                     
-                    Button(action: {
-                        
-                        self.index = 1
-                        
-                    }) {
-                        
-                        Text("Friends")
-                            .foregroundColor(self.index == 1 ? Color.white : .gray)
-                            .padding(.vertical, 10)
-                            .padding(.horizontal)
-                            .background(self.index == 1 ? Color.blue : Color.clear)
-                            .cornerRadius(10)
-                    }
+                }) {
                     
-                    Spacer(minLength: 0)
-                    
-                    Button(action: {
-                        
-                        self.index = 2
-                        
-                    }) {
-                        
-                        Text("Settings")
-                            .foregroundColor(self.index == 2 ? Color.white : .gray)
-                            .padding(.vertical, 10)
-                            .padding(.horizontal)
-                            .background(self.index == 2 ? Color.blue : Color.clear)
-                            .cornerRadius(10)
-                    }
-                    
+                    Text("Favorites")
+                        .foregroundColor(self.index == 0 ? Color.white : .gray)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal)
+                        .background(self.index == 0 ? Color.blue : Color.clear)
+                        .cornerRadius(10)
                 }
+                
+                Spacer(minLength: 0)
+                
+                Button(action: {
+                    
+                    self.index = 1
+                    
+                }) {
+                    
+                    Text("Friends")
+                        .foregroundColor(self.index == 1 ? Color.white : .gray)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal)
+                        .background(self.index == 1 ? Color.blue : Color.clear)
+                        .cornerRadius(10)
+                }
+                
+                Spacer(minLength: 0)
+                
+                Button(action: {
+                    
+                    self.index = 2
+                    
+                }) {
+                    
+                    Text("Settings")
+                        .foregroundColor(self.index == 2 ? Color.white : .gray)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal)
+                        .background(self.index == 2 ? Color.blue : Color.clear)
+                        .cornerRadius(10)
+                }
+                
             }
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-//                .background(Color.)
-                .cornerRadius(8)
-                .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
-                .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
-                .padding(.horizontal)
+            
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            //                .background(Color.)
+            .cornerRadius(8)
+            .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
+            .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
+            .padding(.horizontal)
             .padding(.top, 25)
             
-            
-            
-            //MARK: Cards
-            ScrollView {
-                HStack(spacing: 20) {
-                    
-                    VStack(spacing: 12) {
-                        
-                        Image("Tacos")
-                            .resizable()
-                            .frame(width: 120, height: 120)
-                            .cornerRadius(8)
-                        Text("Tacos")
-                            .font(.title)
-                            .padding(.top, 10)
-                        Text("StreetFood Fire")
-                        Text("Serves 4")
-                            .font(.caption)
-                            .foregroundColor(.gray)
+            NavigationView {
+                List {
+                    ForEach(card.shuffled()) { item in
+                        NavigationLink(destination: CardDetailView(card: item)) {
+                            CardRowView(card: item)
+                                .padding(.vertical, 4)
+                        }
                     }
-                    .padding(.vertical)
-                    .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                    
-                    .cornerRadius(15)
-                    .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
-                    .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
-                    
-                    VStack(spacing: 12) {
-                        
-                        Image("FrenchToast")
-                            .resizable()
-                            .frame(width: 120, height: 120)
-                            .cornerRadius(8)
-                        Text("French Toast")
-                            .font(.title)
-                            .padding(.top, 10)
-                        Text("Breakfast Lyfe")
-                        Text("Serves 4")
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                    }
-                    .padding(.vertical)
-                    .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                    
-                    .cornerRadius(15)
-                    .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
-                    .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
-                    
                 }
-                .padding(.bottom)
-                Spacer(minLength: 0)
-                HStack(spacing: 20) {
-                    
-                    VStack(spacing: 12) {
-                        
-                        Image("PotStickers")
-                            .resizable()
-                            .frame(width: 120, height: 120)
-                            .cornerRadius(8)
-                        Text("Pot Stickers")
-                            .font(.title)
-                            .padding(.top, 10)
-                        Text("PotHead Stickers")
-                        Text("Serves 4")
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                    }
-                    .padding(.vertical)
-                    .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                    
-                    .cornerRadius(15)
-                    .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
-                    .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
-                    
-                    VStack(spacing: 12) {
-                        
-                        Image("Steak")
-                            .resizable()
-                            .frame(width: 120, height: 120)
-                            .cornerRadius(8)
-                        Text("Ribeye Steak")
-                            .font(.title)
-                            .padding(.top, 10)
-                        Text("Steak 4 the Win")
-                        Text("Serves 4")
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                    }
-                    .padding(.vertical)
-                    .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-//                    .background(Color.)
-                    .cornerRadius(15)
-                    .shadow(color: Color.black.opacity(0.1),radius: 5, x:8, y:8)
-                    .shadow(color: Color.white.opacity(0.5),radius: 5, x: -8, y: -8)
-                    
-                }
+                .navigationTitle("Favorites")
+                
+                
             }
-        }
-        .background(Color.white)
+            
+            
+        }//: NAVIGATION
+        
+        
+        
     }
     
 }
+
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()

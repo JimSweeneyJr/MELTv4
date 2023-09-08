@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225723BB2AAA99A10029F051 /* SearchFeaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225723BA2AAA99A10029F051 /* SearchFeaturesView.swift */; };
+		225723BD2AAAA3C90029F051 /* FeaturesCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225723BC2AAAA3C90029F051 /* FeaturesCardView.swift */; };
+		225723BF2AAAAC250029F051 /* SponsoredCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225723BE2AAAAC250029F051 /* SponsoredCardView.swift */; };
 		226D53AC2A89AC1A00AAB8C1 /* MELTv4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D53AB2A89AC1A00AAB8C1 /* MELTv4App.swift */; };
 		226D53AE2A89AC1A00AAB8C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D53AD2A89AC1A00AAB8C1 /* ContentView.swift */; };
 		226D53B02A89AC1B00AAB8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226D53AF2A89AC1B00AAB8C1 /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225723BA2AAA99A10029F051 /* SearchFeaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeaturesView.swift; sourceTree = "<group>"; };
+		225723BC2AAAA3C90029F051 /* FeaturesCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesCardView.swift; sourceTree = "<group>"; };
+		225723BE2AAAAC250029F051 /* SponsoredCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredCardView.swift; sourceTree = "<group>"; };
 		226D53A82A89AC1A00AAB8C1 /* MELTv4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MELTv4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226D53AB2A89AC1A00AAB8C1 /* MELTv4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELTv4App.swift; sourceTree = "<group>"; };
 		226D53AD2A89AC1A00AAB8C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +109,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225723C02AAAB61F0029F051 /* CardViews */ = {
+			isa = PBXGroup;
+			children = (
+				225723BE2AAAAC250029F051 /* SponsoredCardView.swift */,
+				22793FD12A916FBF00E6492A /* CookbookCardView.swift */,
+				22A02B3C2AA4046D001573E1 /* CardDetailView.swift */,
+				225723BC2AAAA3C90029F051 /* FeaturesCardView.swift */,
+				22A02B3E2AA40565001573E1 /* CardDetailHeaderView.swift */,
+				22793F8C2A89B78200E6492A /* CardSection.swift */,
+				22A02B3A2AA3F94D001573E1 /* CardRowView.swift */,
+			);
+			path = CardViews;
+			sourceTree = "<group>";
+		};
 		226D539F2A89AC1A00AAB8C1 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +150,7 @@
 				22793F7F2A89B5F200E6492A /* Data */,
 				226D53AB2A89AC1A00AAB8C1 /* MELTv4App.swift */,
 				226D53AF2A89AC1B00AAB8C1 /* Assets.xcassets */,
+				225723C02AAAB61F0029F051 /* CardViews */,
 				226D53D52A89AF3D00AAB8C1 /* Views */,
 				226D53B12A89AC1B00AAB8C1 /* Preview Content */,
 			);
@@ -165,17 +186,13 @@
 			isa = PBXGroup;
 			children = (
 				226D53AD2A89AC1A00AAB8C1 /* ContentView.swift */,
-				22793F8C2A89B78200E6492A /* CardSection.swift */,
 				22793F8A2A89B73900E6492A /* CookbookView.swift */,
 				22793F862A89B70800E6492A /* UserProfileView.swift */,
 				22793F882A89B71700E6492A /* SettingsView.swift */,
 				226D53DA2A89B1B400AAB8C1 /* SplashScreenView.swift */,
 				22793FD32A918DFD00E6492A /* ProfileHeaderView.swift */,
 				22793F8E2A89B7B300E6492A /* CardView.swift */,
-				22793FD12A916FBF00E6492A /* CookbookCardView.swift */,
-				22A02B3A2AA3F94D001573E1 /* CardRowView.swift */,
-				22A02B3C2AA4046D001573E1 /* CardDetailView.swift */,
-				22A02B3E2AA40565001573E1 /* CardDetailHeaderView.swift */,
+				225723BA2AAA99A10029F051 /* SearchFeaturesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,12 +392,15 @@
 				22793F872A89B70800E6492A /* UserProfileView.swift in Sources */,
 				22A02B3F2AA40565001573E1 /* CardDetailHeaderView.swift in Sources */,
 				226D53AE2A89AC1A00AAB8C1 /* ContentView.swift in Sources */,
+				225723BB2AAA99A10029F051 /* SearchFeaturesView.swift in Sources */,
 				22793FD22A916FBF00E6492A /* CookbookCardView.swift in Sources */,
 				22793F8F2A89B7B300E6492A /* CardView.swift in Sources */,
+				225723BD2AAAA3C90029F051 /* FeaturesCardView.swift in Sources */,
 				22793F832A89B61D00E6492A /* CardData.swift in Sources */,
 				22793FD42A918DFD00E6492A /* ProfileHeaderView.swift in Sources */,
 				22A02B3B2AA3F94D001573E1 /* CardRowView.swift in Sources */,
 				22A02B372A9AD3D2001573E1 /* RegistrationView.swift in Sources */,
+				225723BF2AAAAC250029F051 /* SponsoredCardView.swift in Sources */,
 				226D53AC2A89AC1A00AAB8C1 /* MELTv4App.swift in Sources */,
 				22793F8D2A89B78200E6492A /* CardSection.swift in Sources */,
 				22A02B332A9AC9FC001573E1 /* LoginView.swift in Sources */,

@@ -20,9 +20,9 @@ struct ContentView: View {
                 .tabItem({
                     Image("cookbook")
                 })
-            SettingsView()
+            SearchFeaturesView()
                 .tabItem({
-                    Image("settings")
+                    Image("search")
                 })
             ProfileView()
                 .tabItem({
