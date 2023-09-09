@@ -10,6 +10,7 @@
 		225723BB2AAA99A10029F051 /* SearchFeaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225723BA2AAA99A10029F051 /* SearchFeaturesView.swift */; };
 		225723BD2AAAA3C90029F051 /* FeaturesCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225723BC2AAAA3C90029F051 /* FeaturesCardView.swift */; };
 		225723BF2AAAAC250029F051 /* SponsoredCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225723BE2AAAAC250029F051 /* SponsoredCardView.swift */; };
+		225723C22AABF0640029F051 /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225723C12AABF0640029F051 /* MapKitView.swift */; };
 		226D53AC2A89AC1A00AAB8C1 /* MELTv4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D53AB2A89AC1A00AAB8C1 /* MELTv4App.swift */; };
 		226D53AE2A89AC1A00AAB8C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D53AD2A89AC1A00AAB8C1 /* ContentView.swift */; };
 		226D53B02A89AC1B00AAB8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226D53AF2A89AC1B00AAB8C1 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		225723BA2AAA99A10029F051 /* SearchFeaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeaturesView.swift; sourceTree = "<group>"; };
 		225723BC2AAAA3C90029F051 /* FeaturesCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesCardView.swift; sourceTree = "<group>"; };
 		225723BE2AAAAC250029F051 /* SponsoredCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredCardView.swift; sourceTree = "<group>"; };
+		225723C12AABF0640029F051 /* MapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitView.swift; sourceTree = "<group>"; };
 		226D53A82A89AC1A00AAB8C1 /* MELTv4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MELTv4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226D53AB2A89AC1A00AAB8C1 /* MELTv4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELTv4App.swift; sourceTree = "<group>"; };
 		226D53AD2A89AC1A00AAB8C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				22793FD32A918DFD00E6492A /* ProfileHeaderView.swift */,
 				22793F8E2A89B7B300E6492A /* CardView.swift */,
 				225723BA2AAA99A10029F051 /* SearchFeaturesView.swift */,
+				225723C12AABF0640029F051 /* MapKitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				22A02B372A9AD3D2001573E1 /* RegistrationView.swift in Sources */,
 				225723BF2AAAAC250029F051 /* SponsoredCardView.swift in Sources */,
 				226D53AC2A89AC1A00AAB8C1 /* MELTv4App.swift in Sources */,
+				225723C22AABF0640029F051 /* MapKitView.swift in Sources */,
 				22793F8D2A89B78200E6492A /* CardSection.swift in Sources */,
 				22A02B332A9AC9FC001573E1 /* LoginView.swift in Sources */,
 				226D53DB2A89B1B400AAB8C1 /* SplashScreenView.swift in Sources */,
