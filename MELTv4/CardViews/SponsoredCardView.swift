@@ -18,9 +18,6 @@ struct SponsoredCardView: View {
             Image(card.imageName)
                 .resizable()
                 .clipped()
-                
-            
-            
             
             // Linear Gradient
             LinearGradient(gradient: cardGradient, startPoint: .top, endPoint: .bottom)
