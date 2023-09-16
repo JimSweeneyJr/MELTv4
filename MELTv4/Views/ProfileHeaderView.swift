@@ -19,8 +19,14 @@ struct ProfileHeaderView: View {
         }
         .padding(.horizontal)
         .frame(height: 100)
-        .background(Color.white)
+        .background(CustomColor.myTeal)
     }
+        
+}
+
+struct CustomColor {
+    static let myTeal = Color("myTeal")
+    // Add more here...
 }
 
 struct ProfileHeaderView_Previews: PreviewProvider {

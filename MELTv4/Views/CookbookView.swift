@@ -14,31 +14,40 @@ struct CookbookView: View {
     var card: [Card] = cardData
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(card.shuffled()) { item in
-                    NavigationLink(destination: CardDetailView(card: item)) {
-                        CardRowView(card: item)
-                            .padding(.vertical, 4)
+        ZStack {
+            NavigationView {
+                List {
+                    ForEach(card.shuffled()) { item in
+                        NavigationLink(destination: CardDetailView(card: item)) {
+                            CardRowView(card: item)
+                                .padding(.vertical, 4)
+                        }
+                        
                     }
                 }
+                .navigationTitle("Cookbook")
+                .navigationBarItems(
+                    trailing:
+                        Button(action: {
+                            isShowingSettings = true
+                        }) {
+                            Image(systemName: "slider.horizontal.3")
+                        }//: BUTTON
+                        .sheet(isPresented: $isShowingSettings) {
+                            SettingsView()
+                        }
+                )
+                
             }
-            .navigationTitle("Cookbook")
-            .navigationBarItems(
-                trailing:
-                    Button(action: {
-                        isShowingSettings = true
-                    }) {
-                        Image(systemName: "slider.horizontal.3")
-                    }//: BUTTON
-                    .sheet(isPresented: $isShowingSettings) {
-                        SettingsView()
-                    }
-            )
-            
-        }//: NAVIGATION
+        }
+        
+        
     }
+    
 }
+
+
+
 
 struct CookbookView_Previews: PreviewProvider {
     static var previews: some View {
