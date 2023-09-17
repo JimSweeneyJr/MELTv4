@@ -9,39 +9,44 @@ import SwiftUI
 
 struct CookbookView: View {
     
+    @State private var search: String = ""
     @State private var isShowingSettings: Bool = false
     
     var card: [Card] = cardData
     
     var body: some View {
         ZStack {
-            NavigationView {
-                List {
-                    ForEach(card.shuffled()) { item in
-                        NavigationLink(destination: CardDetailView(card: item)) {
-                            CardRowView(card: item)
-                                .padding(.vertical, 4)
-                        }
-                        
-                    }
+            
+            VStack {
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                    TextField("Search my cookbook", text: $search)
+                        .fontWeight(.bold)
                 }
-                .navigationTitle("Cookbook")
-                .navigationBarItems(
-                    trailing:
-                        Button(action: {
-                            isShowingSettings = true
-                        }) {
-                            Image(systemName: "slider.horizontal.3")
-                        }//: BUTTON
-                        .sheet(isPresented: $isShowingSettings) {
-                            SettingsView()
-                        }
-                )
+                    .padding()
+                    .background(Color.gray)
+                    .opacity(0.4)
+                    .cornerRadius(10)
+                    .padding()
                 
+                
+                NavigationView {
+                    
+                    List {
+                        ForEach(card.shuffled()) { item in
+                            NavigationLink(destination: CardDetailView(card: item)) {
+                                CardRowView(card: item)
+                                    .padding(.vertical, 4)
+                            }
+                            
+                        }
+                    }
+                    .navigationTitle("Cookbook")
+                    
+                }
             }
+            
         }
-        
-        
     }
     
 }

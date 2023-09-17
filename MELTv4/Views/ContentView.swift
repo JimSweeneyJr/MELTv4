@@ -11,30 +11,35 @@ struct ContentView: View {
     var card: [Card] = cardData
     
     var body: some View {
-        TabView {
-            CardSection()
-                .tabItem({
-                    Image("home")
-                })
-            CookbookView()
-                .tabItem({
-                    Image("cookbook")
-                })
-            SearchFeaturesView()
-                .tabItem({
-                    Image("search")
-                })
-            ProfileView()
-                .tabItem({
-                    Image("user")
-                })
-            }
-        .edgesIgnoringSafeArea(.top)
-        
-    
-    }
        
-        
+        VStack {
+            
+            MainHeaderView()
+                .padding()
+            
+            TabView {
+                   
+                    CardSection()
+                        .tabItem({
+                            Image("home")
+                        })
+                    CookbookView()
+                        .tabItem({
+                            Image("cookbook")
+                        })
+                    SearchFeaturesView()
+                        .tabItem({
+                            Image("search")
+                        })
+                    ProfileView()
+                        .tabItem({
+                            Image("user")
+                        })
+                    }
+            .edgesIgnoringSafeArea(.top)
+        }
+            
+    }
         
 }
 
