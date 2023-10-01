@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MainHeaderView: View {
+    
+    @State private var search: String = ""
+    
+    
     var body: some View {
             
             VStack {
@@ -15,11 +19,11 @@ struct MainHeaderView: View {
                     Button(action: {}) {
                         Image(systemName: "line.3.horizontal")
                             .padding(10)
-                            .background(Color("myYellow"))
+                            .background(Color(.systemGray6))
                             .cornerRadius(8)
                             .font(.system(size: 20, weight: .bold))
                             .imageScale(.large)
-                            .foregroundColor(Color("myBlue"))
+                            .foregroundColor(.gray)
                     }
                     
                     Spacer()
@@ -31,14 +35,32 @@ struct MainHeaderView: View {
                             .clipShape(Circle())
                            
                     }
+                    .padding(.top)
                     
                 }
-                .padding(.horizontal, 3)
+                .padding(.horizontal, 20)
+               
+        
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .padding(.trailing, 8)
+                    TextField("Find your next meal", text: $search)
+                }
+                .font(.subheadline)
+                .padding(12)
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+                .padding(.horizontal, 24)
                 
-            
+                
+                SelectScrollNav()
+                    .padding(.bottom, 10)
+                    .padding(.top, 10)
+                
+                Divider()
+                
         }
         .frame(height: 30, alignment: .center)
-        
         
     }
     

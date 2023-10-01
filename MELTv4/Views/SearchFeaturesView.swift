@@ -23,48 +23,14 @@ struct SearchFeaturesView: View {
             
             NavigationView {
                 VStack {
-                    HStack {
-                        Image(systemName: "magnifyingglass")
-                        TextField("Search my cookbook", text: $search)
-                            .fontWeight(.bold)
-                    }
-                    .padding()
-                    .background(Color.gray)
-                    .opacity(0.4)
-                    .cornerRadius(10)
-                    .padding()
-                    
-                    
-                    Text("Trending")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .padding(.trailing, 260)
-                        .padding(.bottom, -80)
-               
-                        ScrollView(.horizontal, showsIndicators: false) {
-                          
-                                VStack(alignment: .leading) {
-                                    
-                                    HStack {
-                                        ForEach(card.shuffled()) { item in
-                                            NavigationLink(destination: CardDetailView(card: item)) {
-                                                FeaturesCardView(card: item)
-                                                    .padding(.vertical, 4)
-                                            }
-                                        }
-                                    }
-                                    
-                                }
-                    }
-                        .padding()
-                    
-                    .frame(height: 250)
+                    TrendingView()
+
                         
                         Text("Sponsored")
                         .font(.title2)
                         .fontWeight(.bold)
                         .padding(.trailing, 230)
-                        .padding(.top, -40)
+                        .padding(.top, -10)
                     
                         ScrollView {
                             VStack(alignment: .leading) {

@@ -15,7 +15,10 @@ struct ContentView: View {
         VStack {
             
             MainHeaderView()
+                .padding(.top, 30)
+                .padding(.bottom, 20)
                 .padding()
+            
             
             TabView {
                    

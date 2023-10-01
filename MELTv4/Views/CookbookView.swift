@@ -18,18 +18,6 @@ struct CookbookView: View {
         ZStack {
             
             VStack {
-                HStack {
-                    Image(systemName: "magnifyingglass")
-                    TextField("Search my cookbook", text: $search)
-                        .fontWeight(.bold)
-                }
-                    .padding()
-                    .background(Color.gray)
-                    .opacity(0.4)
-                    .cornerRadius(10)
-                    .padding()
-                
-                
                 NavigationView {
                     
                     List {
