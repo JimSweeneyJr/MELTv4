@@ -43,7 +43,7 @@ struct TrendingView: View {
                 .padding()
             }
         }
-        .frame(height: 190)
+        
     }
 }
 

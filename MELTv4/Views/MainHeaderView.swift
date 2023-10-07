@@ -61,6 +61,7 @@ struct MainHeaderView: View {
                 
         }
         .frame(height: 30, alignment: .center)
+        .padding(.bottom, 15)
         
     }
     

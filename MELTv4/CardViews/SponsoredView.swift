@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct SponsoredView: View {
-    var body: some View {
-        
-        Text("Sponsored")
-        .font(.title2)
-        .fontWeight(.bold)
-        .padding(.trailing, 230)
-        .padding(.top, -10)
     
+    @State private var search: String = ""
+    @State private var isShowingSettings: Bool = false
+    init() {
+          UIScrollView.appearance().bounces = false
+       }
+    
+    var card: [Card] = cardData
+    
+    
+    var body: some View {
         ScrollView {
+            Text("Sponsored")
+                .font(.custom(
+                        "Bodini 72",
+                        fixedSize: 28))
+                .fontWeight(.bold)
+                .padding(.trailing, 260)
+    
+        
             VStack(alignment: .leading) {
                 
                 ForEach(card.shuffled()) { item in

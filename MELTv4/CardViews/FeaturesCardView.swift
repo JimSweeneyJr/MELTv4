@@ -16,7 +16,7 @@ struct FeaturesCardView: View {
             Image(card.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 150, height: 150)
+                    .frame(width: 200, height: 200)
                     .cornerRadius(10)
             
         }

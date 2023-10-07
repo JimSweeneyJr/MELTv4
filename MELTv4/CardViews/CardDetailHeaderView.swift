@@ -25,13 +25,12 @@ struct CardDetailHeaderView: View {
                 .cornerRadius(8)
                 
             }//: ZSTACK
-        .frame(width: 600, height: 600, alignment: .center)
+        .frame(width: 300, height: 300, alignment: .center)
         .scaledToFit()
         .onAppear() {
             withAnimation(.easeOut(duration: 0.5)) {
                 isAnimatingImage = true
             }
-            
         }
     }
 }

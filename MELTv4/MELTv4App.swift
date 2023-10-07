@@ -26,8 +26,8 @@ struct MELTv4App: App {
 
     var body: some Scene {
         WindowGroup {
-//            SplashScreenView()
-            ContentView()
+            SplashScreenView()
+            
         }
     }
 }

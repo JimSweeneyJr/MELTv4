@@ -58,6 +58,9 @@
 		229FCA872AC90BD500D07ABA /* SelectScrollNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229FCA862AC90BD500D07ABA /* SelectScrollNav.swift */; };
 		229FCA892AC9155B00D07ABA /* TrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229FCA882AC9155B00D07ABA /* TrendingView.swift */; };
 		229FCA8B2AC9183700D07ABA /* SponsoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229FCA8A2AC9183700D07ABA /* SponsoredView.swift */; };
+		229FCA902AD10A2000D07ABA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229FCA8F2AD10A2000D07ABA /* MainView.swift */; };
+		229FCA922AD10A7000D07ABA /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229FCA912AD10A7000D07ABA /* Drawer.swift */; };
+		229FCA942AD1125F00D07ABA /* NavButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229FCA932AD1125F00D07ABA /* NavButtons.swift */; };
 		22A02B3B2AA3F94D001573E1 /* CardRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A02B3A2AA3F94D001573E1 /* CardRowView.swift */; };
 		22A02B3D2AA4046D001573E1 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A02B3C2AA4046D001573E1 /* CardDetailView.swift */; };
 		22A02B3F2AA40565001573E1 /* CardDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A02B3E2AA40565001573E1 /* CardDetailHeaderView.swift */; };
@@ -115,6 +118,9 @@
 		229FCA862AC90BD500D07ABA /* SelectScrollNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScrollNav.swift; sourceTree = "<group>"; };
 		229FCA882AC9155B00D07ABA /* TrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingView.swift; sourceTree = "<group>"; };
 		229FCA8A2AC9183700D07ABA /* SponsoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredView.swift; sourceTree = "<group>"; };
+		229FCA8F2AD10A2000D07ABA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		229FCA912AD10A7000D07ABA /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		229FCA932AD1125F00D07ABA /* NavButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButtons.swift; sourceTree = "<group>"; };
 		22A02B3A2AA3F94D001573E1 /* CardRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRowView.swift; sourceTree = "<group>"; };
 		22A02B3C2AA4046D001573E1 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		22A02B3E2AA40565001573E1 /* CardDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailHeaderView.swift; sourceTree = "<group>"; };
@@ -220,6 +226,7 @@
 				225723C72AB1255C0029F051 /* GoogleService-Info.plist */,
 				226D53AF2A89AC1B00AAB8C1 /* Assets.xcassets */,
 				226D53AB2A89AC1A00AAB8C1 /* MELTv4App.swift */,
+				229FCA8E2AD109C700D07ABA /* SideNav */,
 				225723C02AAAB61F0029F051 /* CardViews */,
 				22793F7F2A89B5F200E6492A /* Data */,
 				226D53D52A89AF3D00AAB8C1 /* Views */,
@@ -267,6 +274,16 @@
 				22793F842A89B66100E6492A /* Model.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		229FCA8E2AD109C700D07ABA /* SideNav */ = {
+			isa = PBXGroup;
+			children = (
+				229FCA8F2AD10A2000D07ABA /* MainView.swift */,
+				229FCA912AD10A7000D07ABA /* Drawer.swift */,
+				229FCA932AD1125F00D07ABA /* NavButtons.swift */,
+			);
+			path = SideNav;
 			sourceTree = "<group>";
 		};
 		22DC6D7A2AB9159900114428 /* Authentication */ = {
@@ -442,13 +459,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229FCA922AD10A7000D07ABA /* Drawer.swift in Sources */,
 				22793F892A89B71700E6492A /* SettingsView.swift in Sources */,
 				22793F852A89B66100E6492A /* Model.swift in Sources */,
+				229FCA942AD1125F00D07ABA /* NavButtons.swift in Sources */,
 				22793F872A89B70800E6492A /* UserProfileView.swift in Sources */,
 				22A02B3F2AA40565001573E1 /* CardDetailHeaderView.swift in Sources */,
 				226D53AE2A89AC1A00AAB8C1 /* ContentView.swift in Sources */,
 				225724052AB665B80029F051 /* MainHeaderView.swift in Sources */,
 				225723BB2AAA99A10029F051 /* SearchFeaturesView.swift in Sources */,
+				229FCA902AD10A2000D07ABA /* MainView.swift in Sources */,
 				225724032AB543500029F051 /* HeaderView.swift in Sources */,
 				225723C52AAFD7BF0029F051 /* SplashScreenView.swift in Sources */,
 				22793FD22A916FBF00E6492A /* CookbookCardView.swift in Sources */,
